@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<link rel="icon" type="image/svg+xml" href="/vite.svg" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="/src/style.scss">
+	<title>Vite + TS</title>
+</head>
+
+<body>
+	<center>
+		<br>
+		<h1>Kanban Todos</h1>
+
+		<form name="add_task" >
+			<input type="text" name="title" >
+			<textarea name="description"></textarea>
+			<select name="status" >
+				<option value="1">Todo</option>
+				<option value="2">In Progress</option>
+				<option value="3">Done</option>
+			</select>
+			<button>create new task</button>
+		</form>
+		
+		<br>
+		<br>
+	</center>
+	<div class="container">
+		<div class="col" data-status="1" >
+			<span>Todo</span>
+			<div class="tasks">
+				
+			</div>
+		</div>
+		<div class="col" data-status="2" >
+			<span>In Progress</span>
+			<div class="tasks">
+
+			</div>
+		</div>
+		<div class="col" data-status="3" >
+			<span>Done</span>
+			<div class="tasks">
+
+			</div>
+		</div>
+	</div>
+
+	<div class="trash">
+		<img src="/public/7853766_trash_kashifarif_delete_remove_recycle_icon.svg" alt="">
+	</div>
+
+	<script type="module" src="/src/main.ts"></script>
+</body>
+
+</html>
